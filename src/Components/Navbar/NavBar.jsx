@@ -41,7 +41,7 @@ const NavBar = () => {
     <a className="btn btn-ghost text-[30px] hover:bg-[#EDF9FE] font-playfair italic font-extrabold text-[#001C55] animate-pulse">{'<  />'}</a>
   </div>
   <div className="navbar-end hidden lg:flex">
-    <ul className="menu menu-horizontal space-x-7 font-roboto text-[#193a7d]  text-[16px]" id='sidebar'>
+    <ul className="menu menu-horizontal space-x-6 font-roboto text-[#193a7d]  text-[16px]" id='sidebar'>
       {li}
     </ul>
   </div>
