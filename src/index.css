@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sidebar a:hover {
+    background-color: #EDF9FE;
+    color: #001C55;
+}
+
+
+#sidebar a.active {
+    background-color: #EDF9FE;
+    color: #0e3788;
+    font-weight: 700;
+    transition: font-weight 0.3s ease-in-out;
+}
+
+#sidebar2 a:hover {
+    background-color: #EDF9FE;
+    color: #001C55;
+}
+
+
+#sidebar2 a.active {
+    background-color: #EDF9FE;
+    color: #001C55;
+    font-weight: 700;
+    transition: font-weight 0.3s ease-in-out;
+}
+
+
+  
