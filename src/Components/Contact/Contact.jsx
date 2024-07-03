@@ -7,6 +7,7 @@ import { FaSquareXTwitter, FaStar } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Email from '../Home/Email';
 
 
 
@@ -15,7 +16,7 @@ const Contact = () => {
         <>
            <section className='flex lg:flex-row flex-row-reverse lg:justify-center  justify-between'>
             <div>
-            <Lottie className='lg:w-[550px] rounded-full w-[200px]' animationData={ContactPhoto} loop={true} />
+            <Lottie className='lg:w-[551px] rounded-full w-[200px]' animationData={ContactPhoto} loop={true} />
             </div>
             <div className='lg:pl-0 pl-4  lg:text-center lg:space-y-4 space-y-2 w-[530px] lg:pt-[150px] pt-5'>
                 <h1 className='lg:text-5xl text-2xl font-semibold font-roboto text-[#001C55]'>Contact Me</h1>
@@ -44,6 +45,7 @@ const Contact = () => {
             <a href="https://www.instagram.com/sabkatahmedrafi" target='_blank'><FaSquareInstagram size={40} color='#E9286A' /></a>
             <a href="mailto:sabkatahmedrafi@gmail.com" target='_blank'><MdEmail  size={40} color='#D44638' /></a>
             </div>
+            <Email></Email>
         </>
     );
 };
