@@ -1,12 +1,14 @@
 import React, { useRef, useState } from 'react';
-import EmailPhoto from '../../../public/Email.json';
-import Lottie from 'lottie-react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Email = () => {
+
+  AOS.init();
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -38,13 +40,14 @@ const Email = () => {
 
     return (
         <>
-          <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 shadow-lg shadow-sky-300 mb-10">
+          <div data-aos="zoom-in-up" className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 shadow-lg shadow-sky-300 mb-10">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2 lg:pl-14">
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl text-[#001C55] ">Let's talk!</h2>
 			<div className="dark:text-gray-600">Connect with me through message.</div>
 		</div>
-        <Lottie className='lg:w-[400px] ' animationData={EmailPhoto} loop={true} />
+        {/* <Lottie className='lg:w-[400px] ' animationData={EmailPhoto} loop={true} /> */}
+        <img src="contact.png" className='lg:w-[400px]' alt="" />
 	</div>
 	<form ref={form} onSubmit={sendEmail} className="space-y-6">
 		<div>

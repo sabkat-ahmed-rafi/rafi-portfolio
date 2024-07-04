@@ -1,13 +1,18 @@
 import React from 'react';
 import { FaStar  } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
+import 'animate.css';
+import { useLocation } from 'react-router-dom';
 
 
 
 const Banner = () => {
+
+  const location = useLocation(); 
+
     return (
         <>
-          <section className='flex justify-between items-center'>
+          <section key={location.pathname} className='flex justify-between items-center animate__animated animate__fadeInUp'>
             <div>
                 <h1  className='lg:text-[120px] text-[57px] font-semibold text-[#001C55] font-roboto '>Sabkat Ahmed Rafi</h1>
                 <p className='text-4xl font-light pb-4 lg:text-left text-center'>A <Typewriter words={['Programmer', 'Developer']} cursor={true} cursorBlinking={true} loop={0} /></p>

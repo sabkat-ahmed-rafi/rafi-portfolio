@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import 'animate.css';
+
 
 const NavBar = () => {
+
+  const location = useLocation();
 
     const li = <>
       <li><NavLink  to='/'>Home</NavLink></li>
@@ -12,7 +16,7 @@ const NavBar = () => {
 
     return (
         <>
-            <section className='pt-4'>
+            <section key={location.pathname} className='pt-4 lg:animate__animated lg:animate__fadeInDown'>
             <div className="navbar">
   <div className="navbar-start">
     <div className="dropdown">
@@ -33,7 +37,7 @@ const NavBar = () => {
       <ul
         tabIndex={0}
         id='sidebar2'
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content z-50 bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
         {li}        
       </ul>
     </div>

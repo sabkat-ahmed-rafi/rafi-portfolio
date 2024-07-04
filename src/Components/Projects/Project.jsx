@@ -2,7 +2,10 @@ import React from 'react';
 import { GoProjectRoadmap } from "react-icons/go";
 
 
+
 const Project = () => {
+
+
     return (
         <>
             <section className='flex gap-5 pb-5 flex-wrap justify-center'>
