@@ -35,7 +35,7 @@ const Contact = () => {
             <a href="mailto:sabkatahmedrafi@gmail.com" target='_blank'><MdEmail  size={40} color='#D44638' /></a>
             </div>
             <div>
-            <a href="deedyResume.pdf" download="Sabkat_Ahmed_Rafi_Resume.pdf" target='_blank' className='btn bg-[#001C55] text-white hover:text-[#001C55] hover:bg-transparent hover:border hover:border-[#001C55] font-[300] mb-4 mt-4 font-roboto text-xl lg:flex ml-[180px] lg:w-[176px] hidden'><button>See My Resume</button></a>
+            <a href="Sabkat_Ahmed_Rafi_Resume.pdf" download="Sabkat_Ahmed_Rafi_Resume.pdf" target='_blank' className='btn bg-[#001C55] text-white hover:text-[#001C55] hover:bg-transparent hover:border hover:border-[#001C55] font-[300] mb-4 mt-4 font-roboto text-xl lg:flex ml-[180px] lg:w-[176px] hidden'><button>See My Resume</button></a>
             </div>
             </div>
             </section>
